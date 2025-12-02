@@ -1,4 +1,4 @@
-1. Introduction to the DOM
+Introduction to the DOM
 
 What is the DOM?
 

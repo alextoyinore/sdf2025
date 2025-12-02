@@ -1,0 +1,16 @@
+.phoneDetails {
+    /* display: block; */
+    /* transition and translate */
+    transition: transform 0.3s ease-in-out;    
+    transform: translateY(0);
+}
+
+.phoneDetails.hidden {
+    transform: translateY(100%);
+}
+.phoneDetails {
+    /* display: block; */
+    /* transition and translate */
+    transition: transform 0.3s ease-in-out;    
+    transform: translateY(0);
+}

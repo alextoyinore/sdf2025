@@ -1,28 +1,37 @@
 // Different methods to select elements
 const myId = document.getElementById('myId');
 const myClass = document.getElementsByClassName('myClass');
-const div = document.getElementsByTagName('div');
+const div = document.getElementsByTagName('div'); // Accesses all divs
 
 // Modern methods (recommended)
 const element = document.querySelector('#myId'); // Single element
 const elements = document.querySelectorAll('.myClass'); // NodeList
 
 // Examples
-const header = document.querySelector('header');
+const h1 = document.querySelector('h1');
 const buttons = document.querySelectorAll('button.primary');
 const firstListItem = document.querySelector('ul li:first-child');
 
 // Log selected elements to the console
-console.log(myId, myClass, div, element, elements);
+// console.log(myId, myClass, div, element, elements);
 
 // JavaScript DOM Manipulation Examples
 
 // Change text content
-/* header.textContent = 'Welcome to My Website'; */
+// console.log('Before change:', h1.textContent);
+// h1.textContent = 'Welcome to My Website';
+// div[0].innerHTML = 'This is a div element.';
+// console.log('After change:', h1.textContent);
+
+
+// console.log('Array contents:', myArray);
 
 // Change styles
-/* header.style.backgroundColor = 'lightblue';
-  	header.style.padding = '10px'; */
+console.log(h1);
+h1.style.backgroundColor = 'lightblue';
+h1.style.padding = '10px';
+h1.style.color = 'darkblue';
+h1.style.borderRadius = '20px';
 
 // Add a new class
 /* header.classList.add('active-header'); */
@@ -58,9 +67,10 @@ console.log(myId, myClass, div, element, elements);
 
 
  // More examples of event listeners with button click
-const alertButton = document.getElementById('alertButton');
+const alertButton = document.querySelector('#alertButton');
+console.log(alertButton);
 if (alertButton) {
-		alertButton.addEventListener('click', () => {
+		alertButton.addEventListener('mouseover', function() {
 				alert('Alert Button Clicked!');
 		});
 }
@@ -82,4 +92,5 @@ if (changeColorButton && textElement) {
 				textElement.style.color = 'blue';
 		});
 }
+
 
